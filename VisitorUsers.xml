@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE VisitorUsers [
+    <!ELEMENT VisitorUsers (VisitorUser+)>
+    <!ELEMENT VisitorUser (name, email, membershipStatus, purchases, feedbackID)>
+    <!ATTLIST VisitorUser visitorID ID #REQUIRED>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT membershipStatus (#PCDATA)>
+    <!ELEMENT purchases (ticketID+)>
+    <!ELEMENT ticketID (#PCDATA)>
+    <!ELEMENT feedbackID (#PCDATA)>
+]>
+<VisitorUsers>
+    <VisitorUser visitorID="v123">
+        <name>Alex Turner</name>
+        <email>alex505@boardwalk.com</email>
+        <membershipStatus>false</membershipStatus>
+        <purchases>
+            <ticketID></ticketID>
+        </purchases>
+        <feedbackID>f100</feedbackID>
+    </VisitorUser>
+    <VisitorUser visitorID="v124">
+        <name>Jane Smith</name>
+        <email>jane.smith@example.com</email>
+        <membershipStatus>false</membershipStatus>
+        <purchases>
+            <ticketID>t003</ticketID>
+        </purchases>
+        <feedbackID>f101</feedbackID>
+    </VisitorUser>
+    <VisitorUser visitorID="v125">
+        <name>Alex Johnson</name>
+        <email>alex.johnson@example.com</email>
+        <membershipStatus>true</membershipStatus>
+        <purchases>
+            <ticketID>t004</ticketID>
+        </purchases>
+        <feedbackID>f102</feedbackID>
+    </VisitorUser>
+    <VisitorUser visitorID="v126">
+        <name>Lorem Ipsum</name>
+        <email>lorem.ipsum@example.com</email>
+        <membershipStatus>true</membershipStatus>
+        <purchases>
+            <ticketID>t005</ticketID>
+        </purchases>
+        <feedbackID>f105</feedbackID>
+    </VisitorUser>
+</VisitorUsers>

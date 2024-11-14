@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE PaymentSystems [
+    <!ELEMENT PaymentSystems (PaymentSystem+)>
+    <!ELEMENT PaymentSystem (amount, paymentDate, paymentMethod, userID, status)>
+    <!ATTLIST PaymentSystem paymentID ID #REQUIRED>
+    <!ELEMENT amount (#PCDATA)>
+    <!ELEMENT paymentDate (#PCDATA)>
+    <!ELEMENT paymentMethod (#PCDATA)>
+    <!ELEMENT userID (#PCDATA)>
+    <!ELEMENT status (#PCDATA)>
+]>
+<PaymentSystems>
+    <PaymentSystem paymentID="p002">
+        <amount>75.00</amount>
+        <paymentDate>2023-11-15</paymentDate>
+        <paymentMethod>PayPal</paymentMethod>
+        <userID>v124</userID>
+        <status>completed</status>
+    </PaymentSystem>
+    <PaymentSystem paymentID="p003">
+        <amount>30.00</amount>
+        <paymentDate>2023-11-16</paymentDate>
+        <paymentMethod>Debit Card</paymentMethod>
+        <userID>v125</userID>
+        <status>completed</status>
+    </PaymentSystem>
+    <PaymentSystem paymentID="p004">
+        <amount>35.00</amount>
+        <paymentDate>2022-11-16</paymentDate>
+        <paymentMethod>Debit Card</paymentMethod>
+        <userID>v126</userID>
+        <status>completed</status>
+    </PaymentSystem>
+</PaymentSystems>

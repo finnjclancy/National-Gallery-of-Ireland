@@ -1,0 +1,2 @@
+As you may see I needed the users class to be implemented so the payment system is linked to feedbacks,
+I took the liberty to start it and implemented some things. -Nikolaos

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Feedbacks [
+    <!ELEMENT Feedbacks (Feedback+)>
+    <!ELEMENT Feedback (visitorID, rating, comments, dateSubmitted, ratingValue)>
+    <!ATTLIST Feedback feedbackID ID #REQUIRED>
+    <!ELEMENT visitorID (#PCDATA)>
+    <!ELEMENT rating (#PCDATA)>
+    <!ELEMENT comments (#PCDATA)>
+    <!ELEMENT dateSubmitted (#PCDATA)>
+    <!ELEMENT ratingValue (#PCDATA)>
+]>
+<Feedbacks>
+    <Feedback feedbackID="f100">
+        <visitorID>v123</visitorID>
+        <rating>1</rating>
+        <comments>The receptions staff is rude, paintings boring</comments>
+        <dateSubmitted>2023-11-14</dateSubmitted>
+        <ratingValue>1</ratingValue>
+    </Feedback>
+    <Feedback feedbackID="f101">
+        <visitorID>v124</visitorID>
+        <rating>5</rating>
+        <comments>Loved it! Highly recommend.</comments>
+        <dateSubmitted>2023-11-15</dateSubmitted>
+        <ratingValue>5</ratingValue>
+    </Feedback>
+    <Feedback feedbackID="f102">
+        <visitorID>v125</visitorID>
+        <rating>3</rating>
+        <comments>It was good, but could be better.</comments>
+        <dateSubmitted>2023-11-16</dateSubmitted>
+        <ratingValue>3</ratingValue>
+    </Feedback>
+    <Feedback feedbackID="f103">
+        <visitorID>v126</visitorID>
+        <rating>5+</rating>
+        <comments>Good ol craic</comments>
+        <dateSubmitted>2023-11-16</dateSubmitted>
+        <ratingValue>5+</ratingValue>
+    </Feedback>
+</Feedbacks>
