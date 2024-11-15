@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Tickets [
+    <!ELEMENT Tickets (Ticket+)>
+    <!ELEMENT Ticket (visitorID, ticketType, price, purchaseDate, ticketStatus)>
+    <!ATTLIST Ticket ticketID ID #REQUIRED>
+    <!ELEMENT visitorID (#PCDATA)>
+    <!ELEMENT ticketType (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    <!ELEMENT purchaseDate (#PCDATA)>
+    <!ELEMENT ticketStatus (#PCDATA)>
+]>
+
+<Tickets>
+    <Ticket ticketID="001">
+        <visitorID>v150</visitorID>
+        <ticketType>Adult</ticketType>
+        <price>75.00</price>
+        <purchaseDate>2023-11-14</purchaseDate>
+        <ticketStatus>Expired</ticketStatus>
+    </Ticket>
+    <Ticket ticketID="002">
+        <visitorID>v151</visitorID>
+        <ticketType>Student</ticketType>
+        <price>35.00</price>
+        <purchaseDate>2023-11-14</purchaseDate>
+        <ticketStatus>Valid</ticketStatus>
+    </Ticket>
+    <Ticket ticketID="003">
+        <visitorID>v152</visitorID>
+        <ticketType>OAP</ticketType>
+        <price>30.00</price>
+        <purchaseDate>2023-11-15</purchaseDate>
+        <ticketStatus>Used</ticketStatus>
+    </Ticket>
+    <Ticket ticketID="004">
+        <visitorID>v153</visitorID>
+        <ticketType>Student</ticketType>
+        <price>35.00</price>
+        <purchaseDate>2023-11-15</purchaseDate>
+        <ticketStatus>Valid</ticketStatus>
+    </Ticket>
+    <Ticket ticketID="004">
+        <visitorID>v154</visitorID>
+        <ticketType>Adult</ticketType>
+        <price>75.00</price>
+        <purchaseDate>2023-11-15</purchaseDate>
+        <ticketStatus>Valid</ticketStatus>
+    </Ticket>
+    <Ticket ticketID="005">
+        <visitorID>v155</visitorID>
+        <ticketType>OAP</ticketType>
+        <price>30.00</price>
+        <purchaseDate>2023-11-16</purchaseDate>
+        <ticketStatus>Valid</ticketStatus>
+    </Ticket>
+    <Ticket ticketID="006">
+        <visitorID>v156</visitorID>
+        <ticketType>Student</ticketType>
+        <price>35.00</price>
+        <purchaseDate>2023-11-16</purchaseDate>
+        <ticketStatus>Used</ticketStatus>
+    </Ticket>
+</Tickets>
