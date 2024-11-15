@@ -1,0 +1,10 @@
+<!DOCTYPE artworks [
+  <!ELEMENT artworks (artwork+)>
+  <!ELEMENT artwork (id, title, artist, medium, year, value)>
+  <!ELEMENT id (#PCDATA)>
+  <!ELEMENT title (#PCDATA)>
+  <!ELEMENT artist (#PCDATA)>
+  <!ELEMENT medium (#PCDATA)>
+  <!ELEMENT year (#PCDATA)>
+  <!ELEMENT value (#PCDATA)>
+]>
