@@ -9,7 +9,7 @@ declare default element namespace "";
 
 let $paymentSystems := collection("National-Gallery-of-Ireland")//PaymentSystem
 let $feedbacks := collection("National-Gallery-of-Ireland")//Feedback
-
+(:maybe try without the collection interlinking:)
 for $feedback in $feedbacks
 let $visitorID := $feedback/visitorID/text()
 where some $payment in $paymentSystems satisfies $payment/userID = $visitorID
