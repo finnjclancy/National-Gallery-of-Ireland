@@ -1,0 +1,15 @@
+<!DOCTYPE events [
+
+<!ELEMENT events (event+)>
+<!ELEMENT event (eventName, dates, locations, host)>
+<!ELEMENT dates (date+)>
+<!ELEMENT locations (location+)>
+
+<!ELEMENT eventName (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT location (#PCDATA)>
+
+<!ATTLIST event eventID CDATA #REQUIRED>
+
+]>
