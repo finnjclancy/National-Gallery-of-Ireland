@@ -1,12 +1,16 @@
 xquery version "3.1";
 
-let $artworks := doc("artwork-xml.xml")/artworks/artwork
-let $artists := doc("artist-xml.xml")/artists/artist
-
+let $artists := doc("artists.xml")//artist
+let $artworks := doc("museum.xml")//artwork
 for $artist in $artists
-let $artworkCount := count($artworks[artist = $artist/name])
+let $artistName := $artist/name
+let $totalArtworks := count(
+  for $art in $artworks
+  where $art/artistName = $artistName
+  return $art
+)
 return
-  <result>
-    <artist>{$artist/name/text()}</artist>
-    <artworkCount>{$artworkCount}</artworkCount>
-  </result>
+  <artistTotal>
+    <name>{$artistName}</name>
+    <totalArtworks>{$totalArtworks}</totalArtworks>
+  </artistTotal>
