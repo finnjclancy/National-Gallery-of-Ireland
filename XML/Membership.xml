@@ -4,7 +4,9 @@
 
 <!ELEMENT Members (Membership+)>
 <!ELEMENT Membership (price, expirationDate, visitorID, type)>
-<!ELEMENT price (#PCDATA)>
+<!ELEMENT purchasePrice (#PCDATA)>
+<!ELEMENT purchaseType (#PCDATA)>
+<!ELEMENT purchaseDate (#PCDATA)>
 <!ELEMENT expirationDate (#PCDATA)>
 <!ELEMENT visitorID (#PCDATA) >
 <!ELEMENT type (#PCDATA)>
@@ -16,50 +18,64 @@
 
 <Members>
 	<Membership membershipID = "0001">
-		<price>500</price>
-		<expirationDate>18-11-2025</expirationDate>
+		<purchasePrice>500</purchasePrice>
+		<purchseType>Final</purchaseType>
+		<purchaseDate>2023-11-15</purchaseDate>
+		<expirationDate>2024-11-15</expirationDate>
 		<visitorID>1234</visitorID>
 		<type>Patron</type>
 	</Membership>
 
 	<Membership membershipID = "0002">
-		<price>500.00</price>
-		<expirationDate>18-11-2025</expirationDate>
+		<purchasePrice>500.00</purchasePrice>
+		<purchseType>Final</purchaseType>
+		<purchaseDate>2023-11-15</purchaseDate>
+		<expirationDate>2024-11-15</expirationDate>
 		<visitorID>2345</visitorID>
 		<type>Patron</type>
 	</Membership>
 
 	<Membership membershipID = "0003">
-		<price>1500.00</price>
-		<expirationDate>18-11-2025</expirationDate>
+		<purchasePrice>1500.00</purchasePrice>
+		<purchseType>Final</purchaseType>
+		<purchaseDate>2023-11-15</purchaseDate>
+		<expirationDate>2024-11-15</expirationDate>
 		<visitorID>3456</visitorID>
 		<type>Patron_Curator</type>
 	</Membership>
 
 	<Membership membershipID = "0004">
-		<price>1500.00</price>
-		<expirationDate>18-11-2025</expirationDate>
+		<purchasePrice>1500.00</purchasePrice>
+		<purchseType>Recurring</purchaseType>
+		<purchaseDate>2023-11-15</purchaseDate>
+		<expirationDate>2024-11-15</expirationDate>
 		<visitorID>4567</visitorID>
 		<type>Patron_Curator</type>
 	</Membership>
 
 	<Membership membershipID = "0005">
-		<price>1500.00</price>
-		<expirationDate>18-11-2025</expirationDate>
+		<purchasePrice>1500.00</purchasePrice>
+		<purchseType>Recurring</purchaseType>
+		<purchaseDate>2023-11-15</purchaseDate>
+		<expirationDate>2024-11-15</expirationDate>
 		<visitorID>5678</visitorID>
 		<type>Patron_Curator</type>
 	</Membership>
 
 	<Membership membershipID = "0006">
-		<price>5000.00</price>
-		<expirationDate>18-11-2025</expirationDate>
+		<purchasePrice>5000.00</purchasePrice>
+		<purchseType>Recurring</purchaseType>
+		<purchaseDate>2023-11-15</purchaseDate>
+		<expirationDate>2024-11-15</expirationDate>
 		<visitorID>6789</visitorID>
 		<type>Patron_Director</type>
 	</Membership>
 
 	<Membership membershipID = "0007">
-		<price>10000.00</price>
-		<expirationDate>18-11-2025</expirationDate>
+		<purchasePrice>10000.00</purchasePrice>
+		<purchseType>Final</purchaseType>
+		<purchaseDate>2023-11-15</purchaseDate>
+		<expirationDate>2024-11-15</expirationDate>
 		<visitorID>7890</visitorID>
 		<type>Patron_Dargan</type>
 	</Membership>
