@@ -1,0 +1,12 @@
+<!DOCTYPE Members [
+
+<!ELEMENT> Members (Membership+)>
+<!ELEMENT Membership (price, expirationDate, visitorID, type)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT expirationDate (#PCDATA)>
+<!ELEMENT visitorID (#PCDATA) >
+<!ELEMENT type (#PCDATA)>
+
+<!ATTLIST Membership membershipID CDATA #REQUIRED>
+
+]>
