@@ -2,11 +2,13 @@
 
 <!DOCTYPE artists [
   <!ELEMENT artists (artist+)>
-  <!ELEMENT artist (name, nationality, birthYear, deathYear)>
+  <!ELEMENT artist (name, nationality, birthYear, deathYear, specialty, placeOfStudy)>
   <!ELEMENT name (#PCDATA)>
   <!ELEMENT nationality (#PCDATA)>
   <!ELEMENT birthYear (#PCDATA)>
   <!ELEMENT deathYear (#PCDATA)>
+  <!ELEMENT specialty (#PCDATA)>
+  <!ELEMENT placeOfStudy (#PCDATA)>
 ]>
 
 <artists>
