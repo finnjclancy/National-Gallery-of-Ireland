@@ -5,7 +5,7 @@ XML Documents
 
 Rachel, Artwork: DONE
 Nick, Feedback: 1 MORE ELEMENT
-Liam, Membership: 2 MORE ELEMENTS
+Liam, Membership: DONE
 Nick, Payment Systems: 1 MORE ELEMENT
 Noah, Tickets: 1 MORE ELEMENT
 Roisin, Donations: DONE
