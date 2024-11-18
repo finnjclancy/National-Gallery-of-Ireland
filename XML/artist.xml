@@ -9,24 +9,29 @@
   <!ELEMENT deathYear (#PCDATA)>
 ]>
 
-
 <artists>
   <artist>
     <name>Vincent van Gogh</name>
     <nationality>Dutch</nationality>
     <birthYear>1853</birthYear>
     <deathYear>1890</deathYear>
+    <specialty>Post-Impressionist</specialty>
+    <placeOfStudy>Académie Royale des Beaux-Arts</placeOfStudy>
   </artist>
   <artist>
-    <name>Salvador Dal\'ed</name>
+    <name>Salvador Dalì</name>
     <nationality>Spanish</nationality>
     <birthYear>1904</birthYear>
     <deathYear>1989</deathYear>
+    <specialty>Surrealism</specialty>
+    <placeOfStudy>Real Academia de Bellas Artes de San Fernando</placeOfStudy>
   </artist>
   <artist>
     <name>Edvard Munch</name>
     <nationality>Norwegian</nationality>
     <birthYear>1863</birthYear>
     <deathYear>1944</deathYear>
+    <specialty>Expressionism</specialty>
+    <placeOfStudy>Royal School of Art and Design</placeOfStudy>
   </artist>
 </artists>
