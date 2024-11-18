@@ -1,2 +1,19 @@
 As you may see I needed the users class to be implemented so the payment system is linked to feedbacks,
 I took the liberty to start it and implemented some things. -Nikolaos
+
+XML Documents
+
+Rachel, Artwork: DONE
+Nick, Feedback: 1 MORE ELEMENT
+Liam, Membership: 2 MORE ELEMENTS
+Nick, Payment Systems: 1 MORE ELEMENT
+Noah, Tickets: 1 MORE ELEMENT
+Roisin, Donations: DONE
+Robin, Events: 2 MORE ELEMENTS
+Finn, Artists: DONE
+Nick, Visitors: 1 MORE ELEMENT
+
+XQuerys
+
+Liam, Membership: DONE (FOR)
+
