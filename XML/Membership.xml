@@ -19,7 +19,7 @@
 <Members>
 	<Membership membershipID = "0001">
 		<purchasePrice>500</purchasePrice>
-		<purchseType>Final</purchaseType>
+		<purchaseType>Final</purchaseType>
 		<purchaseDate>2023-11-14</purchaseDate>
 		<expirationDate>2024-11-14</expirationDate>
 		<visitorID>1234</visitorID>
@@ -28,7 +28,7 @@
 
 	<Membership membershipID = "0002">
 		<purchasePrice>500.00</purchasePrice>
-		<purchseType>Final</purchaseType>
+		<purchaseType>Final</purchaseType>
 		<purchaseDate>2023-11-14</purchaseDate>
 		<expirationDate>2024-11-14</expirationDate>
 		<visitorID>2345</visitorID>
@@ -37,7 +37,7 @@
 
 	<Membership membershipID = "0003">
 		<purchasePrice>1500.00</purchasePrice>
-		<purchseType>Final</purchaseType>
+		<purchaseType>Final</purchaseType>
 		<purchaseDate>2023-11-14</purchaseDate>
 		<expirationDate>2024-11-14</expirationDate>
 		<visitorID>3456</visitorID>
@@ -46,7 +46,7 @@
 
 	<Membership membershipID = "0004">
 		<purchasePrice>1500.00</purchasePrice>
-		<purchseType>Recurring</purchaseType>
+		<purchaseType>Recurring</purchaseType>
 		<purchaseDate>2023-11-15</purchaseDate>
 		<expirationDate>2024-11-15</expirationDate>
 		<visitorID>4567</visitorID>
@@ -55,7 +55,7 @@
 
 	<Membership membershipID = "0005">
 		<purchasePrice>1500.00</purchasePrice>
-		<purchseType>Recurring</purchaseType>
+		<purchaseType>Recurring</purchaseType>
 		<purchaseDate>2023-11-15</purchaseDate>
 		<expirationDate>2024-11-15</expirationDate>
 		<visitorID>5678</visitorID>
@@ -64,7 +64,7 @@
 
 	<Membership membershipID = "0006">
 		<purchasePrice>5000.00</purchasePrice>
-		<purchseType>Recurring</purchaseType>
+		<purchaseType>Recurring</purchaseType>
 		<purchaseDate>2023-11-15</purchaseDate>
 		<expirationDate>2024-11-15</expirationDate>
 		<visitorID>6789</visitorID>
@@ -73,7 +73,7 @@
 
 	<Membership membershipID = "0007">
 		<purchasePrice>10000.00</purchasePrice>
-		<purchseType>Final</purchaseType>
+		<purchaseType>Final</purchaseType>
 		<purchaseDate>2023-11-16</purchaseDate>
 		<expirationDate>2024-11-16</expirationDate>
 		<visitorID>7890</visitorID>
