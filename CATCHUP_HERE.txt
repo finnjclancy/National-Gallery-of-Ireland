@@ -22,6 +22,6 @@ Nick, FeedbackPaying: DONE (LET) (WHERE) (FOR) (CONNECTED)
 Finn, Artwork Artist: DONE (LET) (FOR) (WHERE) (CONNECTED)
 
 4 queries:
-2 queries Robin - Built in
-1 query Rachel - user defined
-1 query Noah - user defined
+2 queries Robin - (BUILT IN)
+1 query Rachel - (USER DEFINED)
+1 query Noah - (USER DEFINED)
