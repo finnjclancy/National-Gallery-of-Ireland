@@ -2,13 +2,14 @@
 
 <!DOCTYPE Tickets [
     <!ELEMENT Tickets (Ticket+)>
-    <!ELEMENT Ticket (visitorID, ticketType, price, purchaseDate, ticketStatus)>
+    <!ELEMENT Ticket (visitorID, ticketType, price, purchaseDate, ticketStatus, expirationDate)>
     <!ATTLIST Ticket ticketID ID #REQUIRED>
     <!ELEMENT visitorID (#PCDATA)>
     <!ELEMENT ticketType (#PCDATA)>
     <!ELEMENT price (#PCDATA)>
     <!ELEMENT purchaseDate (#PCDATA)>
     <!ELEMENT ticketStatus (#PCDATA)>
+    <!ELEMENT expirationDate (#PCDATA)>
 ]>
 
 <Tickets>
@@ -18,6 +19,7 @@
         <price>75.00</price>
         <purchaseDate>2023-11-14</purchaseDate>
         <ticketStatus>Expired</ticketStatus>
+        <expirationDate>2023-11-16</expirationDate>
     </Ticket>
     <Ticket ticketID="002">
         <visitorID>v151</visitorID>
@@ -25,6 +27,7 @@
         <price>35.00</price>
         <purchaseDate>2023-11-14</purchaseDate>
         <ticketStatus>Valid</ticketStatus>
+        <expirationDate>2023-11-16</expirationDate>
     </Ticket>
     <Ticket ticketID="003">
         <visitorID>v152</visitorID>
@@ -32,6 +35,7 @@
         <price>30.00</price>
         <purchaseDate>2023-11-15</purchaseDate>
         <ticketStatus>Used</ticketStatus>
+        <expirationDate>2023-11-17</expirationDate>
     </Ticket>
     <Ticket ticketID="004">
         <visitorID>v153</visitorID>
@@ -39,6 +43,7 @@
         <price>35.00</price>
         <purchaseDate>2023-11-15</purchaseDate>
         <ticketStatus>Valid</ticketStatus>
+        <expirationDate>2023-11-17</expirationDate>
     </Ticket>
     <Ticket ticketID="004">
         <visitorID>v154</visitorID>
@@ -46,6 +51,7 @@
         <price>75.00</price>
         <purchaseDate>2023-11-15</purchaseDate>
         <ticketStatus>Valid</ticketStatus>
+        <expirationDate>2023-11-17</expirationDate>
     </Ticket>
     <Ticket ticketID="005">
         <visitorID>v155</visitorID>
@@ -53,6 +59,7 @@
         <price>30.00</price>
         <purchaseDate>2023-11-16</purchaseDate>
         <ticketStatus>Valid</ticketStatus>
+        <expirationDate>2023-11-18</expirationDate>
     </Ticket>
     <Ticket ticketID="006">
         <visitorID>v156</visitorID>
@@ -60,5 +67,6 @@
         <price>35.00</price>
         <purchaseDate>2023-11-16</purchaseDate>
         <ticketStatus>Used</ticketStatus>
+        <expirationDate>2023-11-18</expirationDate>
     </Ticket>
 </Tickets>
