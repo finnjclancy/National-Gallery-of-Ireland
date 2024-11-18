@@ -20,3 +20,8 @@ Roisin, Donations: DONE (FOR)
 Nick, FeedbackNonPaying: DONE (LET) (WHERE) (FOR) (CONNECTED)
 Nick, FeedbackPaying: DONE (LET) (WHERE) (FOR) (CONNECTED)
 Finn, Artwork Artist: DONE (LET) (FOR) (WHERE) (CONNECTED)
+
+4 queries:
+2 queries Robin - Built in
+1 query Rachel - user defined
+1 query Noah - user defined
