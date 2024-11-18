@@ -2,7 +2,7 @@
 <!DOCTYPE events [
 
 <!ELEMENT events (event+)>
-<!ELEMENT event (eventName, dates, locations, host)>
+<!ELEMENT event (eventName, dates, locations, host, manager, eventDescription)>
 <!ELEMENT dates (date+)>
 <!ELEMENT locations (location+)>
 
@@ -10,6 +10,9 @@
 <!ELEMENT host (#PCDATA)>
 <!ELEMENT date (#PCDATA)>
 <!ELEMENT location (#PCDATA)>
+<!ELEMENT manager (#PCDATA)>
+<!ELEMENT eventDescription (#PCDATA)>
+
 
 <!ATTLIST event eventID CDATA #REQUIRED>
 
@@ -18,62 +21,78 @@
 	<event eventID="230401001">
 		<eventName>Historical Easter Getaway</eventName>
 		<dates>
-			<date>20230401</date>
+			<date>2023-04-01</date>
 		</dates>
 		<locations>
 			<location>Front Court</location>
 		</locations>
 		<host>Trinity Food Society</host>
+		<manager>Robin Schulz</manager>
+		<eventDescription>
+			The Historical Easter Getaway is an event focused on exploring and celebrating the cultural and historical traditions of Easter, featuring themed activities and educational presentations.
+		</eventDescription>
 	</event>
 
 	<!-- New event -->
 	<event eventID="20231225001">
 		<eventName>Boxing Day Charity</eventName>
 		<dates>
-			<date>20231225</date>
+			<date>2023-12-25</date>
 		</dates>
 		<locations>
 			<location>Main Hall</location>
 		</locations>
 		<host>Dublin Salvation Army</host>
+		<manager>Robin Schulz</manager>
+		<eventDescription>
+			The Boxing Day Charity is an event dedicated to raising funds and supporting charitable causes, featuring donations and community-driven activities.		
+		</eventDescription>
 	</event>
 
 	<!-- New event -->
 	<event eventID="20230617001">
 		<eventName>Tech Weekend Saturday</eventName>
 		<dates>
-			<date>20230617</date>
-			<date>20230618</date>
+			<date>2023-06-17</date>
+			<date>2023-06-18</date>
 		</dates>
 		<locations>
 			<location>Tech Room</location>
 		</locations>
 		<host>Google Dublin</host>
+		<manager>Finn CLancy</manager>
+		<eventDescription>
+			Tech Weekend Saturday is an event focused on showcasing the latest in technology, featuring workshops, presentations, and hands-on activities for tech enthusiasts with first hand experience of our Virtual Tour.
+		</eventDescription>
 	</event>
 
 	<!-- New event -->
 	<event eventID="20230618002">
 		<eventName>Accessibility Day</eventName>
 		<dates>
-			<date>20230618</date>
+			<date>2023-06-18</date>
 		</dates>
 		<locations>
 			<location>Main Hall</location>
 		</locations>
 		<host>National Disability Authority</host>
+		<manager>Finn CLancy</manager>
+		<eventDescription>
+			Accessibility Day is an event aimed at raising awareness and promoting inclusivity, featuring discussions, workshops, and resources focused on accessibility for people with disabilities.		
+		</eventDescription>
 	</event>
 
 	<!-- New event -->
 	<event eventID="20230715001">
 		<eventName>Van Gogh Week</eventName>
 		<dates>
-			<date>20230724</date>
-			<date>20230725</date>
-			<date>20230726</date>
-			<date>20230727</date>
-			<date>20230728</date>
-			<date>20230729</date>
-			<date>20230730</date>
+			<date>2023-07-24</date>
+			<date>2023-07-25</date>
+			<date>2023-07-26</date>
+			<date>2023-07-27</date>
+			<date>2023-07-28</date>
+			<date>2023-07-29</date>
+			<date>2023-07-30</date>
 		</dates>
 		<locations>
 			<location>Main Hall</location>
@@ -82,58 +101,61 @@
 			<location>Temporary Exhibit Room</location>
 		</locations>
 		<host>Google Dublin</host>
+		<manager>Robin Schulz</manager>
+		<eventDescription>
+			Van Gogh Week is an event held around his death day celebrating the life and works of Vincent van Gogh, featuring art exhibitions, discussions, and interactive experiences inspired by his iconic paintings.	
+		</eventDescription>
 	</event>
 
 	<!-- New event -->
 	<event eventID="20231005001">
 		<eventName>Children's Art Workshop</eventName>
 		<dates>
-			<date>20231005</date>
+			<date>2023-10-05</date>
 		</dates>
 		<locations>
 			<location>Education Room</location>
 			<location>Courtyard</location>
 		</locations>
 		<host>Creative Kids Art Program</host>
-	</event>
-
-	<!-- New event -->
-	<event eventID="20231005001">
-		<eventName>Children's Art Workshop</eventName>
-		<dates>
-			<date>20231005</date>
-		</dates>
-		<locations>
-			<location>Education Room</location>
-			<location>Courtyard</location>
-		</locations>
-		<host>Creative Kids Art Program</host>
+		<manager>Liam Power</manager>
+		<eventDescription>
+			Children's Art Workshop is an interactive event designed to inspire creativity in young minds, offering hands-on art activities and guided lessons to explore various artistic techniques.		
+		</eventDescription>
 	</event>
 
 	<!-- New event -->
 	<event eventID="20230815001">
 		<eventName>Photography Festival</eventName>
 		<dates>
-			<date>20230815</date>
-			<date>20230816</date>
-			<date>20230817</date>
+			<date>2023-08-15</date>
+			<date>2023-08-16</date>
+			<date>2023-08-17</date>
 		</dates>
 		<locations>
 			<location>South Gallery</location>
 			<location>Photography Room</location>
 		</locations>
 		<host>International Photography Association</host>
+		<manager>Robin Schulz</manager>
+		<eventDescription>
+			Photography Festival is an event celebrating the art of photography, featuring exhibitions, workshops, and talks from renowned photographers, focusing on diverse styles and techniques.
+		</eventDescription>
 	</event>
 	
 	<!-- New event -->
 	<event eventID="20230912001">
 		<eventName>Sponsor Gratitude Evening</eventName>
 		<dates>
-			<date>20230912</date>
+			<date>2023-09-12</date>
 		</dates>
 		<locations>
 			<location>Main Gallery</location>
 		</locations>
 		<host>Gallery Administration</host>
+		<manager>Robin Schulz</manager>
+		<eventDescription>
+			Sponsor Gratitude Evening is an event dedicated to honoring and thanking sponsors for their support, featuring speeches, recognition awards, and networking opportunities.
+		</eventDescription>
 	</event>
 </events>
