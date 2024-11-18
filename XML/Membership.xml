@@ -20,8 +20,8 @@
 	<Membership membershipID = "0001">
 		<purchasePrice>500</purchasePrice>
 		<purchseType>Final</purchaseType>
-		<purchaseDate>2023-11-15</purchaseDate>
-		<expirationDate>2024-11-15</expirationDate>
+		<purchaseDate>2023-11-14</purchaseDate>
+		<expirationDate>2024-11-14</expirationDate>
 		<visitorID>1234</visitorID>
 		<type>Patron</type>
 	</Membership>
@@ -29,8 +29,8 @@
 	<Membership membershipID = "0002">
 		<purchasePrice>500.00</purchasePrice>
 		<purchseType>Final</purchaseType>
-		<purchaseDate>2023-11-15</purchaseDate>
-		<expirationDate>2024-11-15</expirationDate>
+		<purchaseDate>2023-11-14</purchaseDate>
+		<expirationDate>2024-11-14</expirationDate>
 		<visitorID>2345</visitorID>
 		<type>Patron</type>
 	</Membership>
@@ -38,8 +38,8 @@
 	<Membership membershipID = "0003">
 		<purchasePrice>1500.00</purchasePrice>
 		<purchseType>Final</purchaseType>
-		<purchaseDate>2023-11-15</purchaseDate>
-		<expirationDate>2024-11-15</expirationDate>
+		<purchaseDate>2023-11-14</purchaseDate>
+		<expirationDate>2024-11-14</expirationDate>
 		<visitorID>3456</visitorID>
 		<type>Patron_Curator</type>
 	</Membership>
@@ -74,8 +74,8 @@
 	<Membership membershipID = "0007">
 		<purchasePrice>10000.00</purchasePrice>
 		<purchseType>Final</purchaseType>
-		<purchaseDate>2023-11-15</purchaseDate>
-		<expirationDate>2024-11-15</expirationDate>
+		<purchaseDate>2023-11-16</purchaseDate>
+		<expirationDate>2024-11-16</expirationDate>
 		<visitorID>7890</visitorID>
 		<type>Patron_Dargan</type>
 	</Membership>
