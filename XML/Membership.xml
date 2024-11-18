@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE Members SYSTEM "Membership.dtd">
+
+<!DOCTYPE Members [
+
+<!ELEMENT Members (Membership+)>
+<!ELEMENT Membership (price, expirationDate, visitorID, type)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT expirationDate (#PCDATA)>
+<!ELEMENT visitorID (#PCDATA) >
+<!ELEMENT type (#PCDATA)>
+
+<!ATTLIST Membership membershipID CDATA #REQUIRED>
+
+]>
+
 
 <Members>
 	<Membership membershipID = "0001">

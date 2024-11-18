@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE artists [
+  <!ELEMENT artists (artist+)>
+  <!ELEMENT artist (name, nationality, birthYear, deathYear)>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT nationality (#PCDATA)>
+  <!ELEMENT birthYear (#PCDATA)>
+  <!ELEMENT deathYear (#PCDATA)>
+]>
+
+
+<artists>
+  <artist>
+    <name>Vincent van Gogh</name>
+    <nationality>Dutch</nationality>
+    <birthYear>1853</birthYear>
+    <deathYear>1890</deathYear>
+  </artist>
+  <artist>
+    <name>Salvador Dal\'ed</name>
+    <nationality>Spanish</nationality>
+    <birthYear>1904</birthYear>
+    <deathYear>1989</deathYear>
+  </artist>
+  <artist>
+    <name>Edvard Munch</name>
+    <nationality>Norwegian</nationality>
+    <birthYear>1863</birthYear>
+    <deathYear>1944</deathYear>
+  </artist>
+</artists>

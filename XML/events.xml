@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE events SYSTEM "events.dtd">
+<!DOCTYPE events [
 
+<!ELEMENT events (event+)>
+<!ELEMENT event (eventName, dates, locations, host)>
+<!ELEMENT dates (date+)>
+<!ELEMENT locations (location+)>
+
+<!ELEMENT eventName (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT location (#PCDATA)>
+
+<!ATTLIST event eventID CDATA #REQUIRED>
+
+]>
 <events>
 	<event eventID="230401001">
 		<eventName>Historical Easter Getaway</eventName>
