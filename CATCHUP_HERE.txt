@@ -15,5 +15,8 @@ Nick, Visitors: 1 MORE ELEMENT
 
 XQuerys
 
-Liam, Membership: DONE (FOR)
-
+Liam, Membership: DONE (FOR) (LET)
+Roisin, Donations: DONE (FOR)
+Nick, FeedbackNonPaying: DONE (LET) (WHERE) (FOR) (CONNECTED)
+Nick, FeedbackPaying: DONE (LET) (WHERE) (FOR) (CONNECTED)
+Finn, Artwork Artist: DONE (LET) (FOR) (CONNECTED)
