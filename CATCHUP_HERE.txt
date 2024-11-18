@@ -7,9 +7,9 @@ Rachel, Artwork: DONE
 Nick, Feedback: 1 MORE ELEMENT
 Liam, Membership: DONE
 Nick, Payment Systems: 1 MORE ELEMENT
-Noah, Tickets: 1 MORE ELEMENT
+Noah, Tickets: DONE
 Roisin, Donations: DONE
-Robin, Events: 2 MORE ELEMENTS
+Robin, Events: DONE
 Finn, Artists: DONE
 Nick, Visitors: 1 MORE ELEMENT
 
