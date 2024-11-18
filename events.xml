@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE events [
+
+<!ELEMENT events (event+)>
+<!ELEMENT event (eventName, dates, locations, host)>
+<!ELEMENT dates (date+)>
+<!ELEMENT locations (location+)>
+
+<!ELEMENT eventName (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT location (#PCDATA)>
+
+<!ATTLIST event eventID CDATA #REQUIRED>
+
+]>
+
+
+<events>
+	<event eventID="230401001">
+		<eventName>Historical Easter Getaway</eventName>
+		<dates>
+			<date>20230401</date>
+		</dates>
+		<locations>
+			<location>Front Court</location>
+		</locations>
+		<host>Trinity Food Society</host>
+	</event>
+
+	<!-- New event -->
+	<event eventID="20231225001">
+		<eventName>Boxing Day Charity</eventName>
+		<dates>
+			<date>20231225</date>
+		</dates>
+		<locations>
+			<location>Main Hall</location>
+		</locations>
+		<host>Dublin Salvation Army</host>
+	</event>
+
+	<!-- New event -->
+	<event eventID="20230617001">
+		<eventName>Tech Weekend Saturday</eventName>
+		<dates>
+			<date>20230617</date>
+			<date>20230618</date>
+		</dates>
+		<locations>
+			<location>Tech Room</location>
+		</locations>
+		<host>Google Dublin</host>
+	</event>
+
+	<!-- New event -->
+	<event eventID="20230618002">
+		<eventName>Accessibility Day</eventName>
+		<dates>
+			<date>20230618</date>
+		</dates>
+		<locations>
+			<location>Main Hall</location>
+		</locations>
+		<host>National Disability Authority</host>
+	</event>
+
+	<!-- New event -->
+	<event eventID="20230715001">
+		<eventName>Van Gogh Week</eventName>
+		<dates>
+			<date>20230724</date>
+			<date>20230725</date>
+			<date>20230726</date>
+			<date>20230727</date>
+			<date>20230728</date>
+			<date>20230729</date>
+			<date>20230730</date>
+		</dates>
+		<locations>
+			<location>Main Hall</location>
+			<location>Courtyard</location>
+			<location>North Gallery</location>
+			<location>Temporary Exhibit Room</location>
+		</locations>
+		<host>Google Dublin</host>
+	</event>
+
+	<!-- New event -->
+	<event eventID="20231005001">
+		<eventName>Children's Art Workshop</eventName>
+		<dates>
+			<date>20231005</date>
+		</dates>
+		<locations>
+			<location>Education Room</location>
+			<location>Courtyard</location>
+		</locations>
+		<host>Creative Kids Art Program</host>
+	</event>
+
+	<!-- New event -->
+	<event eventID="20231005001">
+		<eventName>Children's Art Workshop</eventName>
+		<dates>
+			<date>20231005</date>
+		</dates>
+		<locations>
+			<location>Education Room</location>
+			<location>Courtyard</location>
+		</locations>
+		<host>Creative Kids Art Program</host>
+	</event>
+
+	<!-- New event -->
+	<event eventID="20230815001">
+		<eventName>Photography Festival</eventName>
+		<dates>
+			<date>20230815</date>
+			<date>20230816</date>
+			<date>20230817</date>
+		</dates>
+		<locations>
+			<location>South Gallery</location>
+			<location>Photography Room</location>
+		</locations>
+		<host>International Photography Association</host>
+	</event>
+	
+	<!-- New event -->
+	<event eventID="20230912001">
+		<eventName>Sponsor Gratitude Evening</eventName>
+		<dates>
+			<date>20230912</date>
+		</dates>
+		<locations>
+			<location>Main Gallery</location>
+		</locations>
+		<host>Gallery Administration</host>
+	</event>
+</events>
