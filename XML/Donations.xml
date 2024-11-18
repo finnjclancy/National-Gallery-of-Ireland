@@ -16,7 +16,7 @@
         <donationID>D001</donationID>
         <donorID>USER001</donorID>
         <amount currency="EUR">100.00</amount>
-        <paymentDate>2024-11-01</paymentDate>
+        <paymentDate>2024-11-14</paymentDate>
         <donationType>Individual</donationType>
         <donationPurpose>Exhibition Support</donationPurpose>
     </Donation>
@@ -24,7 +24,7 @@
         <donationID>D002</donationID>
         <donorID>USER002</donorID>
         <amount currency="USD">250.00</amount>
-        <paymentDate>2024-11-05</paymentDate>
+        <paymentDate>2024-11-15</paymentDate>
         <donationType>Corporate</donationType>
         <donationPurpose>General Fund</donationPurpose>
     </Donation>
@@ -32,7 +32,7 @@
         <donationID>D003</donationID>
         <donorID>ORG001</donorID>
         <amount currency="GBP">500.00</amount>
-        <paymentDate>2024-10-30</paymentDate>
+        <paymentDate>2024-11-16</paymentDate>
         <donationType>Organization</donationType>
         <donationPurpose>Educational Programs</donationPurpose>
     </Donation>
@@ -40,7 +40,7 @@
         <donationID>D004</donationID>
         <donorID>USER003</donorID>
         <amount currency="EUR">200.00</amount>
-        <paymentDate>2024-11-10</paymentDate>
+        <paymentDate>2024-11-16</paymentDate>
         <donationType>Individual</donationType>
         <donationPurpose>Special Exhibition</donationPurpose>
     </Donation>
