@@ -1,7 +1,7 @@
 xquery version "3.1";
 
 let $artists := doc("Artist.xml")//artist
-let $artworks := doc("Artwork.xml")//artwork
+let $artworks := collection("National-Gallery-of-Ireland")//artwork
 
 for $artist in $artists
 let $artistName := $artist/name
