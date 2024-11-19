@@ -1,0 +1,117 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE museum[
+
+<!ELEMENT museum (artwork*)>
+<!ELEMENT artwork (title, artistName, submissionDate, status, category, description)>
+<!ELEMENT title   (#PCDATA)>
+<!ELEMENT artistName   (#PCDATA)>
+<!ELEMENT submissionDate  (#PCDATA)>
+<!ELEMENT status  (#PCDATA)>
+<!ELEMENT category  (#PCDATA)>
+<!ELEMENT description  (#PCDATA)>
+
+<!ATTLIST artwork artworkID CDATA #IMPLIED>
+]>
+
+<museum>
+  <!-- Vincent van Gogh -->
+  <artwork artworkID="2001">
+    <title>Starry Night</title>
+    <artistName>Vincent van Gogh</artistName>
+    <submissionDate>12/06/2024</submissionDate>
+    <status>Displayed</status>
+    <category>Post-Impressionism</category>
+    <description>
+      A depiction of a swirling night sky filled with stars and expressive brushwork that conveys intense emotion.
+    </description>
+  </artwork>
+  <artwork artworkID="2002">
+    <title>Sunflowers</title>
+    <artistName>Vincent van Gogh</artistName>
+    <submissionDate>23/08/2024</submissionDate>
+    <status>Displayed</status>
+    <category>Post-Impressionism</category>
+    <description>
+      A vibrant series of paintings that captures the beauty of sunflowers in bold colors and textures.
+    </description>
+  </artwork>
+  <artwork artworkID="2003">
+    <title>The Bedroom</title>
+    <artistName>Vincent van Gogh</artistName>
+    <submissionDate>15/09/2024</submissionDate>
+    <status>Not Displayed</status>
+    <category>Post-Impressionism</category>
+    <description>
+      A calm and intimate portrayal of Van Gogh's bedroom in Arles, France, showcasing his unique style.
+    </description>
+  </artwork>
+
+  <!-- Salvador Dalí -->
+  <artwork artworkID="2004">
+    <title>The Persistence of Memory</title>
+    <artistName>Salvador Dalí</artistName>
+    <submissionDate>10/03/2024</submissionDate>
+    <status>Displayed</status>
+    <category>Surrealism</category>
+    <description>
+      A surreal masterpiece featuring melting clocks that challenge perceptions of time and reality.
+    </description>
+  </artwork>
+  <artwork artworkID="2005">
+    <title>Swans Reflecting Elephants</title>
+    <artistName>Salvador Dalí</artistName>
+    <submissionDate>18/04/2024</submissionDate>
+    <status>Not Displayed</status>
+    <category>Surrealism</category>
+    <description>
+      A painting that uses reflections to create surreal imagery, showcasing Dalí's creativity and precision.
+    </description>
+  </artwork>
+
+  <!-- Edvard Munch -->
+  <artwork artworkID="2006">
+    <title>The Scream</title>
+    <artistName>Edvard Munch</artistName>
+    <submissionDate>05/07/2024</submissionDate>
+    <status>Displayed</status>
+    <category>Expressionism</category>
+    <description>
+      A powerful representation of human anxiety and despair, using bold colors and flowing lines.
+    </description>
+  </artwork>
+
+  <!-- Claude Monet -->
+  <artwork artworkID="2008">
+    <title>Water Lilies</title>
+    <artistName>Claude Monet</artistName>
+    <submissionDate>14/02/2024</submissionDate>
+    <status>Displayed</status>
+    <category>Impressionism</category>
+    <description>
+      A stunning series of paintings capturing Monet's garden pond and the interplay of light and reflection.
+    </description>
+  </artwork>
+
+  <!-- Frida Kahlo -->
+  <artwork artworkID="2010">
+    <title>The Two Fridas</title>
+    <artistName>Frida Kahlo</artistName>
+    <submissionDate>08/03/2024</submissionDate>
+    <status>Displayed</status>
+    <category>Surrealism</category>
+    <description>
+      A double self-portrait symbolizing Frida Kahlo's exploration of her identity and personal struggles.
+    </description>
+  </artwork>
+  <artwork artworkID="2011">
+    <title>Self-Portrait with Thorn Necklace and Hummingbird</title>
+    <artistName>Frida Kahlo</artistName>
+    <submissionDate>25/06/2024</submissionDate>
+    <status>Not Displayed</status>
+    <category>Surrealism</category>
+    <description>
+      A symbolic and emotive self-portrait reflecting Kahlo's pain and resilience.
+    </description>
+  </artwork>
+</museum>

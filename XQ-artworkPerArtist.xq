@@ -1,7 +1,8 @@
 xquery version "3.1";
 
-let $artists := doc("artists.xml")//artist
-let $artworks := doc("museum.xml")//artwork
+let $artists := doc("Artist.xml")//artist
+let $artworks := doc("Artwork.xml")//artwork
+
 for $artist in $artists
 let $artistName := $artist/name
 let $totalArtworks := count(

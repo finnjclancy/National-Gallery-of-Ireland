@@ -21,8 +21,8 @@ Nick, FeedbackNonPaying: DONE (LET) (WHERE) (FOR) (CONNECTED)
 Nick, FeedbackPaying: DONE (LET) (WHERE) (FOR) (CONNECTED)
 Finn, Artwork Artist: DONE (LET) (FOR) (WHERE) (CONNECTED)
 Noah, getRevenueFromDate: DONE (LET) (USER DEFINED) (CONNECTED)
+Rachel, getArtworkPerCategory:DONE (LET) (USER DEFINED)
 
-4 queries:
+2 queries:
 2 queries Robin - (BUILT IN)
-1 query Rachel - (USER DEFINED)
 

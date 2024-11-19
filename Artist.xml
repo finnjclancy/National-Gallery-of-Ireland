@@ -21,7 +21,7 @@
     <placeOfStudy>Académie Royale des Beaux-Arts</placeOfStudy>
   </artist>
   <artist>
-    <name>Salvador Dalì</name>
+    <name>Salvador Dalí</name>
     <nationality>Spanish</nationality>
     <birthYear>1904</birthYear>
     <deathYear>1989</deathYear>
@@ -35,5 +35,21 @@
     <deathYear>1944</deathYear>
     <specialty>Expressionism</specialty>
     <placeOfStudy>Royal School of Art and Design</placeOfStudy>
+  </artist>
+  <artist>
+    <name>Claude Monet</name>
+    <nationality>French</nationality>
+    <birthYear>1840</birthYear>
+    <deathYear>1926</deathYear>
+    <specialty>Impressionism</specialty>
+    <placeOfStudy>École des Beaux-Arts</placeOfStudy>
+  </artist>
+  <artist>
+    <name>Frida Kahlo</name>
+    <nationality>Mexican</nationality>
+    <birthYear>1907</birthYear>
+    <deathYear>1954</deathYear>
+    <specialty>Surrealism</specialty>
+    <placeOfStudy>Escuela Nacional de Bellas Artes</placeOfStudy>
   </artist>
 </artists>
