@@ -19,6 +19,8 @@ Nick, FeedbackPaying: DONE (LET) (WHERE) (FOR) (CONNECTED)
 Finn, Artwork Artist: DONE (LET) (FOR) (WHERE) (CONNECTED)
 Noah, getRevenueFromDate: DONE (LET) (USER DEFINED) (CONNECTED)
 Rachel, getArtworkPerCategory:DONE (LET) (USER DEFINED)
+Robin, eventsByManager: DONE (LET) (FOR) (WHERE) (SUBSTRING_BEFORE) (CONCAT)
+Robin, eventsLengthInDays: DONE (LET) (FOR) (WHERE) (IF) (SUBSTRING) (CONCAT) (COUNT) (STRING)
 
-2 queries:
-2 queries Robin - (BUILT IN)
+
+
