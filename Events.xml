@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE events [
 
-<!ELEMENT events (event+)>
-<!ELEMENT event (eventName, dates, locations, host, manager, eventDescription)>
+<!ELEMENT events (event*)>
+<!ELEMENT event (eventName, dates, locations, host, manager+, eventDescription)>
 <!ELEMENT dates (date+)>
 <!ELEMENT locations (location+)>
 
@@ -12,7 +12,6 @@
 <!ELEMENT location (#PCDATA)>
 <!ELEMENT manager (#PCDATA)>
 <!ELEMENT eventDescription (#PCDATA)>
-
 
 <!ATTLIST event eventID CDATA #REQUIRED>
 
