@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!-- 
+	This XML document represents a list of memberships for an organisation or institution
+	Each membership contains details e.g. purchase price, type, purchase data, expiration 
+	date, visitor ID and membership type
+-->
+
 <!DOCTYPE Members [
 
-<!ELEMENT Members (Membership+)>
-<!ELEMENT Membership (price, expirationDate, visitorID, type)>
+<!ELEMENT Members (Membership+)> <!-- The '+' cardinality is used to indicate that there must 
+	be at least one 'Membership' element in the document-->
+<!ELEMENT Membership (price, expirationDate, visitorID, type)> <!-- Each 'Membership' element 
+	contains child elements -->
 <!ELEMENT purchasePrice (#PCDATA)>
 <!ELEMENT purchaseType (#PCDATA)>
 <!ELEMENT purchaseDate (#PCDATA)>
@@ -11,12 +19,14 @@
 <!ELEMENT visitorID (#PCDATA) >
 <!ELEMENT type (#PCDATA)>
 
-<!ATTLIST Membership membershipID CDATA #REQUIRED>
+<!ATTLIST Membership membershipID CDATA #REQUIRED> <!-- The 'membershipID' attribute is required 
+	for each 'Membership' element to uniquely identify it-->
 
 ]>
 
 
 <Members>
+	<!-- Membership record for Visitor ID 1234 with a Patron membership-->
 	<Membership membershipID = "0001">
 		<purchasePrice>500</purchasePrice>
 		<purchaseType>Final</purchaseType>
@@ -26,6 +36,7 @@
 		<type>Patron</type>
 	</Membership>
 
+	<!-- Membership record for Visitor ID 2345 with a Patron membership-->
 	<Membership membershipID = "0002">
 		<purchasePrice>500.00</purchasePrice>
 		<purchaseType>Final</purchaseType>
@@ -35,6 +46,7 @@
 		<type>Patron</type>
 	</Membership>
 
+	<!-- Membership record for Visitor ID 3456 with a Patron_Curator membership-->
 	<Membership membershipID = "0003">
 		<purchasePrice>1500.00</purchasePrice>
 		<purchaseType>Final</purchaseType>
@@ -44,6 +56,7 @@
 		<type>Patron_Curator</type>
 	</Membership>
 
+	<!-- Membership record for Visitor ID 4567 with a Patron_Curator membership-->
 	<Membership membershipID = "0004">
 		<purchasePrice>1500.00</purchasePrice>
 		<purchaseType>Recurring</purchaseType>
@@ -53,6 +66,7 @@
 		<type>Patron_Curator</type>
 	</Membership>
 
+	<!-- Membership record for Visitor ID 5678 with a Patron_Curator membership-->
 	<Membership membershipID = "0005">
 		<purchasePrice>1500.00</purchasePrice>
 		<purchaseType>Recurring</purchaseType>
@@ -62,6 +76,7 @@
 		<type>Patron_Curator</type>
 	</Membership>
 
+	<!-- Membership record for Visitor ID 6789 with a Patron_Director membership-->
 	<Membership membershipID = "0006">
 		<purchasePrice>5000.00</purchasePrice>
 		<purchaseType>Recurring</purchaseType>
@@ -71,6 +86,7 @@
 		<type>Patron_Director</type>
 	</Membership>
 
+	<!-- Membership record for Visitor ID 7890 with a Patron_Dargan membership-->
 	<Membership membershipID = "0007">
 		<purchasePrice>10000.00</purchasePrice>
 		<purchaseType>Final</purchaseType>
