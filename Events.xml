@@ -2,7 +2,7 @@
 <!DOCTYPE events [
 
 <!ELEMENT events (event*)>
-<!ELEMENT event (eventName, dates, locations, host, manager+, eventDescription)>
+<!ELEMENT event (eventName, dates, locations, host, manager, eventDescription)>
 <!ELEMENT dates (date+)>
 <!ELEMENT locations (location+)>
 
