@@ -9,8 +9,9 @@ declare function local:calculate-revenue($date as xs:date) as xs:decimal {
 };
 
 let $targetDate := xs:date("2023-11-15")
+let $revenue := local:calculate-revenue($targetDate)
 return
   <TotalRevenue>
-    {local:calculate-revenue($targetDate)}
+    {concat("The total revenue for ", $targetDate, " is $", format-number($revenue, "#,##0.00"), "!")}
   </TotalRevenue>
 
