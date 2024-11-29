@@ -152,22 +152,38 @@ will make the Curator's workflow more efficient. This allows them to gather
 information for potential exhibitions quickly or respond to inquiries from auctioneers, 
 museums, and other galleries.
 
-\section{Strengths and Weaknesses}
-\subsection{Strengths}
+\section{Strengths and Weaknesses Analysis}
 
+\subsection{XML}
+
+\subsubsection{Strengths}
 \begin{itemize}
-    \item We used a standard to create our document, specifically XML, XPath, and XQuery, which ensured consistency across the project.
-    \item We split up the individual XML documents among the team members and then distributed the planned XQueries in a similar way. This distribution had a bias towards those who had worked on certain XML documents that are referenced in specific XQueries.
-    \item The use of XQuery functions and modular XML designs allows for easier updates or modifications in the future.
+    \item We used a standard to create our documents, ensuring consistency across the project.
+    \item The individual XML documents were evenly distributed among team members, promoting balanced workloads.
+    \item The use of modular XML designs allows for easier future updates or modifications.
 \end{itemize}
 
-\subsection{Weaknesses}
-
+\subsubsection{Weaknesses}
 \begin{itemize}
-    \item We faced time constraints when designing, which limited our thoroughness.
-    \item We gained a lot of knowledge through this project, but we have nowhere to put it, meaning not everyone will immediately understand our work.
-    \item We had an enormous amount of classes to pick from in the Class Diagram, making it difficult to choose what to include in our XQueries.
-    \item When designing XQueries, we had to reconfigure parts of our Class Diagram so that certain classes were properly connected after integrating them within XQueries.
+    \item Time constraints during the design phase limited our ability to fully evaluate which classes would work best as XML documents.
+    \item Although we gained significant knowledge, not all team members could immediately understand the concepts due to the lack of centralized documentation.
+    \item The large number of Classes in the Class Diagram made it challenging to decide which ones to convert into XML files.
+\end{itemize}
+
+\subsection{XQuery}
+
+\subsubsection{Strengths}
+\begin{itemize}
+    \item Consistent use of variables, such as dates and prices, across different queries ensured clarity and standardization.
+    \item XQueries were assigned based on prior involvement with specific XML documents, keeping team members focused on familiar Classes.
+    \item The XQueries spanned multiple XML documents, providing a rich and interconnected dataset for queries.
+\end{itemize}
+
+\subsubsection{Weaknesses}
+\begin{itemize}
+    \item The large number of XML files created made it difficult to decide which ones to include in the XQueries.
+    \item While designing XQueries, parts of the Class Diagram had to be reconfigured to connect certain Classes, introducing additional complexity.
+    \item Traversing different Classes with XQueries was challenging because different team members used inconsistent element names for attributes like dates and prices.
 \end{itemize}
 
 \newpage
@@ -685,6 +701,155 @@ date, type of donation, and the purpose of the donation.
     
 \end{verbatim}
 
+\subsection{Payment Systems}
+\begin{itemize}
+    \item Nikolaos
+\end{itemize}
+
+\begin{verbatim}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE PaymentSystems [
+    <!ELEMENT PaymentSystems (PaymentSystem+)>
+    <!ELEMENT PaymentSystem (amount, paymentDate, paymentMethod, userID, status)>
+    <!ATTLIST PaymentSystem paymentID ID #REQUIRED>
+    <!ELEMENT amount (#PCDATA)>
+    <!ELEMENT paymentDate (#PCDATA)>
+    <!ELEMENT paymentMethod (#PCDATA)>
+    <!ELEMENT userID (#PCDATA)>
+    <!ELEMENT status (#PCDATA)>
+]>
+<PaymentSystems>
+    <PaymentSystem paymentID="p002">
+        <amount>75.00</amount>
+        <paymentDate>2023-11-15</paymentDate>
+        <paymentMethod>PayPal</paymentMethod>
+        <userID>v124</userID>
+        <status>completed</status>
+    </PaymentSystem>
+    <PaymentSystem paymentID="p003">
+        <amount>30.00</amount>
+        <paymentDate>2023-11-16</paymentDate>
+        <paymentMethod>Debit Card</paymentMethod>
+        <userID>v125</userID>
+        <status>completed</status>
+    </PaymentSystem>
+    <PaymentSystem paymentID="p004">
+        <amount>35.00</amount>
+        <paymentDate>2022-11-16</paymentDate>
+        <paymentMethod>Debit Card</paymentMethod>
+        <userID>v126</userID>
+        <status>completed</status>
+    </PaymentSystem>
+</PaymentSystems>
+\end{verbatim}
+
+\subsection{Visitor Users}
+\begin{itemize}
+    \item Nikolaos
+\end{itemize}
+
+\begin{verbatim}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE VisitorUsers [
+    <!ELEMENT VisitorUsers (VisitorUser+)>
+    <!ELEMENT VisitorUser (name, email, membershipStatus, purchases, feedbackID)>
+    <!ATTLIST VisitorUser visitorID ID #REQUIRED>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT membershipStatus (#PCDATA)>
+    <!ELEMENT purchases (ticketID+)>
+    <!ELEMENT ticketID (#PCDATA)>
+    <!ELEMENT feedbackID (#PCDATA)>
+]>
+<VisitorUsers>
+    <VisitorUser visitorID="v123">
+        <name>Alex Turner</name>
+        <email>alex505@boardwalk.com</email>
+        <membershipStatus>false</membershipStatus>
+        <purchases>
+            <ticketID></ticketID>
+        </purchases>
+        <feedbackID>f100</feedbackID>
+    </VisitorUser>
+    <VisitorUser visitorID="v124">
+        <name>Jane Smith</name>
+        <email>jane.smith@example.com</email>
+        <membershipStatus>false</membershipStatus>
+        <purchases>
+            <ticketID>t003</ticketID>
+        </purchases>
+        <feedbackID>f101</feedbackID>
+    </VisitorUser>
+    <VisitorUser visitorID="v125">
+        <name>Alex Johnson</name>
+        <email>alex.johnson@example.com</email>
+        <membershipStatus>true</membershipStatus>
+        <purchases>
+            <ticketID>t004</ticketID>
+        </purchases>
+        <feedbackID>f102</feedbackID>
+    </VisitorUser>
+    <VisitorUser visitorID="v126">
+        <name>Lorem Ipsum</name>
+        <email>lorem.ipsum@example.com</email>
+        <membershipStatus>true</membershipStatus>
+        <purchases>
+            <ticketID>t005</ticketID>
+        </purchases>
+        <feedbackID>f105</feedbackID>
+    </VisitorUser>
+</VisitorUsers>
+\end{verbatim}
+
+\subsection{Feedbacks}
+\begin{itemize}
+    \item Nikolaos
+\end{itemize}
+
+\begin{verbatim}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Feedbacks [
+    <!ELEMENT Feedbacks (Feedback+)>
+    <!ELEMENT Feedback (visitorID, rating, comments, dateSubmitted, ratingValue)>
+    <!ATTLIST Feedback feedbackID ID #REQUIRED>
+    <!ELEMENT visitorID (#PCDATA)>
+    <!ELEMENT rating (#PCDATA)>
+    <!ELEMENT comments (#PCDATA)>
+    <!ELEMENT dateSubmitted (#PCDATA)>
+    <!ELEMENT ratingValue (#PCDATA)>
+]>
+<Feedbacks>
+    <Feedback feedbackID="f100">
+        <visitorID>v123</visitorID>
+        <rating>1</rating>
+        <comments>The reception staff is rude, paintings boring</comments>
+        <dateSubmitted>2023-11-14</dateSubmitted>
+        <ratingValue>1</ratingValue>
+    </Feedback>
+    <Feedback feedbackID="f101">
+        <visitorID>v124</visitorID>
+        <rating>5</rating>
+        <comments>Loved it! Highly recommend.</comments>
+        <dateSubmitted>2023-11-15</dateSubmitted>
+        <ratingValue>5</ratingValue>
+    </Feedback>
+    <Feedback feedbackID="f102">
+        <visitorID>v125</visitorID>
+        <rating>3</rating>
+        <comments>It was good, but could be better.</comments>
+        <dateSubmitted>2023-11-16</dateSubmitted>
+        <ratingValue>3</ratingValue>
+    </Feedback>
+    <Feedback feedbackID="f103">
+        <visitorID>v126</visitorID>
+        <rating>5+</rating>
+        <comments>Good ol craic</comments>
+        <dateSubmitted>2023-11-16</dateSubmitted>
+        <ratingValue>5+</ratingValue>
+    </Feedback>
+</Feedbacks>
+\end{verbatim}
+
 \newpage
 \section{Credits}
 
@@ -740,6 +905,15 @@ date, type of donation, and the purpose of the donation.
 \end{itemize}
 
 \subsection{Nick}
+\begin{itemize}
+    \item Created 3 XML documents: Feedback, PaymentSystem and UserVisitor
+    \item Added multiple elements 
+    \item Created 2 XQueries: 
+    \begin{description}
+        \item[getFeedbackFromNonPayingUsers:] Retrieves feedback from non-paying visitors.
+        \item[getFeedbackFromPayingUsers:] Retrieves feedback from paying visitors.
+    \end{description}
+\end{itemize}
 
 \subsection{Roisin}
 \begin{itemize}
