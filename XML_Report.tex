@@ -52,13 +52,13 @@
 
     % List of names
     {\Large 
-        Finn Clancy \\[0.5cm]
-        Robin Schulz \\[0.5cm]
-        Liam Power \\[0.5cm]
-        Rachel  \\[0.5cm]
-        Nick  \\[0.5cm]
-        Roisin  \\[0.5cm]
-        Noah Scolard \\[0.5cm]
+        \textbf{Finn Clancy}         23375792\\[0.5cm]
+        \textbf{Robin Schulz}        22337984\\[0.5cm]
+        \textbf{Liam Power}          23374796\\[0.5cm]
+        \textbf{Rachel Ranjith}      23363463\\[0.5cm]
+        \textbf{Nikolaos Mavrias}    24372713\\[0.5cm]
+        \textbf{Roisin Smith}        23373110\\[0.5cm]
+        \textbf{Noah Scolard}        23374057\\[0.5cm]
     }
 \end{center}
 
@@ -152,8 +152,175 @@ will make the Curator's workflow more efficient. This allows them to gather
 information for potential exhibitions quickly or respond to inquiries from auctioneers, 
 museums, and other galleries.
 
-\section{XQueries}
+\section{Strengths and Weaknesses}
+\subsection{Strengths}
 
+\begin{itemize}
+    \item We used a standard to create our document, specifically XML, XPath, and XQuery, which ensured consistency across the project.
+    \item We split up the individual XML documents among the team members and then distributed the planned XQueries in a similar way. This distribution had a bias towards those who had worked on certain XML documents that are referenced in specific XQueries.
+    \item The use of XQuery functions and modular XML designs allows for easier updates or modifications in the future.
+\end{itemize}
+
+\subsection{Weaknesses}
+
+\begin{itemize}
+    \item We faced time constraints when designing, which limited our thoroughness.
+    \item We gained a lot of knowledge through this project, but we have nowhere to put it, meaning not everyone will immediately understand our work.
+    \item We had an enormous amount of classes to pick from in the Class Diagram, making it difficult to choose what to include in our XQueries.
+    \item When designing XQueries, we had to reconfigure parts of our Class Diagram so that certain classes were properly connected after integrating them within XQueries.
+\end{itemize}
+
+\newpage
+\section{XQueries}
+\subsection{Query for Total Artworks Per Artist}
+\begin{itemize}
+    \item \textbf{Identification of the UML Use Case:} Supports the ``Curators'' use case.
+    \item \textbf{Description of the Purpose:} This query allows curators to determine how many pieces of art the gallery holds for each artist. It helps in planning exhibitions for specific anniversaries and assessing whether additional pieces need to be sourced from other institutions.
+\end{itemize}
+
+\textbf{Example Output:}
+\begin{verbatim}
+<artistTotal>
+    <name>Vincent van Gogh</name>
+    <totalArtworks>3</totalArtworks>
+</artistTotal>
+\end{verbatim}
+
+\subsection{Query for Events Managed by a Specific Manager}
+\begin{itemize}
+    \item \textbf{Identification of the UML Use Case:} Supports the ``Creates Event'' use case.
+    \item \textbf{Description of the Purpose:} This query identifies all events managed by a specific manager based on their first name. It provides a comprehensive list of events for planning and oversight purposes.
+\end{itemize}
+
+\textbf{Example Output:}  
+Input: \texttt{Robin}
+\begin{verbatim}
+<is_manager_for>
+    <eventName>Historical Easter Getaway</eventName>
+</is_manager_for>
+<is_manager_for>
+    <eventName>Boxing Day Charity</eventName>
+</is_manager_for>
+<is_manager_for>
+    <eventName>Van Gogh Week</eventName>
+</is_manager_for>
+<is_manager_for>
+    <eventName>Photography Festival</eventName>
+</is_manager_for>
+<is_manager_for>
+    <eventName>Sponsor Gratitude Evening</eventName>
+</is_manager_for>
+\end{verbatim}
+
+Input: \texttt{Liam}
+\begin{verbatim}
+<is_manager_for>
+    <eventName>Children's Art Workshop</eventName>
+</is_manager_for>
+\end{verbatim}
+
+\subsection{Query for Event Duration}
+\begin{itemize}
+    \item \textbf{Identification of the UML Use Case:} Supports the ``Creates Event'' use case.
+    \item \textbf{Description of the Purpose:} This query calculates and outputs the duration of a specified event in days, including the specific dates it spans.
+\end{itemize}
+
+\textbf{Example Output:}  
+Input: \texttt{Van Gogh Week}  
+\begin{verbatim}
+Van Gogh Week lasts 7 days from the 24th to the 30th.
+\end{verbatim}
+
+Input: \texttt{Sponsor Gratitude Evening}  
+\begin{verbatim}
+Sponsor Gratitude Evening lasts 1 day and is on the 12th.
+\end{verbatim}
+
+\subsection{Query for Membership Revenue}
+\begin{itemize}
+    \item \textbf{Identification of the UML Use Case:} Supports the ``Purchase Membership'' use case.
+    \item \textbf{Description of the Purpose:} This query calculates the total revenue generated from each type of membership. It helps assess revenue performance and informs membership-related decision-making.
+\end{itemize}
+
+\textbf{Example Output:}
+\begin{verbatim}
+<TotalMembershipRevenue type="Patron_Director">5000.0</TotalMembershipRevenue>
+<TotalMembershipRevenue type="Patron_Dargan">10000.0</TotalMembershipRevenue>
+<TotalMembershipRevenue type="Patron_Curator">4500.0</TotalMembershipRevenue>
+\end{verbatim}
+
+\subsection{Query for Artworks by Category}
+\begin{itemize}
+    \item \textbf{Identification of the UML Use Case:} Supports the ``Creates Event'' use case.
+    \item \textbf{Description of the Purpose:} This query allows curators to see the number of artworks available in each category, helping them organize exhibitions based on specific themes or styles.
+\end{itemize}
+
+\textbf{Example Output:}
+\begin{verbatim}
+<category>
+    <name>Post-Impressionism</name>
+    <artworkCount>3</artworkCount>
+</category>
+<category>
+    <name>Surrealism</name>
+    <artworkCount>4</artworkCount>
+</category>
+<category>
+    <name>Expressionism</name>
+    <artworkCount>1</artworkCount>
+</category>
+<category>
+    <name>Impressionism</name>
+    <artworkCount>1</artworkCount>
+</category>
+\end{verbatim}
+
+\subsection{Query for Feedback from Non-Paying Visitors}
+\begin{itemize}
+    \item \textbf{Identification of the UML Use Case:} Supports the ``Feedback'' use case.
+    \item \textbf{Description of the Purpose:} This query retrieves feedback submitted by non-paying visitors, potentially identifying spam or malicious reviews.
+\end{itemize}
+
+\textbf{Example Output:}
+\begin{verbatim}
+<FeedbackFromNonPayingUser>
+    <visitorID>V123</visitorID>
+    <rating>1</rating>
+    <comments>The reception staff is rude, paintings boring</comments>
+    <dateSubmitted>2023-11-14</dateSubmitted>
+    <ratingValue>1</ratingValue>
+</FeedbackFromNonPayingUser>
+\end{verbatim}
+
+\subsection{Query for Donor Contributions}
+\begin{itemize}
+    \item \textbf{Identification of the UML Use Case:} Supports the ``Donate'' use case.
+    \item \textbf{Description of the Purpose:} This query retrieves and displays donations made by a specific donor, including details such as amount, currency, and donation type.
+\end{itemize}
+
+\textbf{Example Output:}
+\begin{verbatim}
+<DonorDonation>
+    <DonationID>D001</DonationID>
+    <Amount>100.00</Amount>
+    <Currency>EUR</Currency>
+    <DonationType>Individual</DonationType>
+</DonorDonation>
+\end{verbatim}
+
+\subsection{Query for Total Revenue on a Specific Date}
+\begin{itemize}
+    \item \textbf{Identification of the UML Use Case:} Supports the ``Donations,'' ``Memberships,'' and ``Tickets'' use cases.
+    \item \textbf{Description of the Purpose:} This query calculates total revenue generated from donations, memberships, and tickets on a specific date.
+\end{itemize}
+
+\textbf{Example Output:}  
+Input: \texttt{2023-11-15}  
+\begin{verbatim}
+<TotalRevenue>The total revenue for 2023-11-15 is $8,390.00!</TotalRevenue>
+\end{verbatim}
+
+\newpage
 \section{XML Documents}
 
 \subsection{Artist}
@@ -206,6 +373,7 @@ retrieve artist-specific data.
   </artist>
   <!-- Additional artist records follow the same structure -->
 </artists>
+
 \end{verbatim}
 
 \subsection{Events}
@@ -398,23 +566,126 @@ required for each 'Membership' element to uniquely identify it-->
 </museum>
 \end{verbatim}
 
-\section{Strengths and Weaknesses}
-\subsection{Strengths}
-
+\subsection{Tickets}
 \begin{itemize}
-    \item We used a standard to create our document, specifically XML, XPath, and XQuery, which ensured consistency across the project.
-    \item We split up the individual XML documents among the team members and then distributed the planned XQueries in a similar way. This distribution had a bias towards those who had worked on certain XML documents that are referenced in specific XQueries.
-    \item The use of XQuery functions and modular XML designs allows for easier updates or modifications in the future.
+    \item Noah
 \end{itemize}
 
-\subsection{Weaknesses}
+\begin{verbatim}
+<?xml version="1.0" ?>
 
+<!-- 
+This is the XML and DTD document for the Tickets Use Case. It stores IDs for 
+both tickets and visitors, the type of tickets along with their price, purchase 
+date, status and expiration date. -->
+
+<!DOCTYPE Tickets [
+    
+    <!-- “Tickets” element has an undefined number of elements, but at least more  
+    than one, hence the “+”. -->
+    <!ELEMENT Tickets (Ticket+)>
+
+    <!-- All tickets include information about their type of ticket, along with 
+    prices and validity dates. --> 
+    <!ELEMENT Ticket (visitorID, ticketType, price, purchaseDate, ticketStatus, 
+    expirationDate)>
+
+    <!-- every ticket has a mandatory attribute that must be included, being 
+    the ID of the ticket -->
+    <!ATTLIST Ticket ticketID ID #REQUIRED>
+
+    <!ELEMENT visitorID (#PCDATA)> <!-- ID of the visitor -->
+    <!ELEMENT ticketType (#PCDATA)> <!-- type of ticket -->
+    <!ELEMENT price (#PCDATA)> <!-- price of ticket -->
+    <!ELEMENT purchaseDate (#PCDATA)> <!-- date of purchase -->
+    <!ELEMENT ticketStatus (#PCDATA)> <!-- validity of ticket -->
+    <!ELEMENT expirationDate (#PCDATA)> <!-- expiration date of ticket -->
+    ]>
+
+<Tickets>
+    <!-- one example of a ticket object -->
+    <Ticket ticketID=”001”>
+    <visitorID>v150</visitorID>
+    <ticketType>Adult</ticketType>
+    <price>75.00</price>
+    <purchaseDate>2023-11-14</purchaseDate>
+    <ticketStatus>Expired</ticketStatus>
+    <expirationDate>2023-11-16</expirationDate>
+    </Ticket>
+    <!-- following ticket objects have the exact same structure -->
+</Tickets>
+    
+\end{verbatim}
+
+\subsection{Donations}
 \begin{itemize}
-    \item We faced time constraints when designing, which limited our thoroughness.
-    \item We gained a lot of knowledge through this project, but we have nowhere to put it, meaning not everyone will immediately understand our work.
-    \item We had an enormous amount of classes to pick from in the Class Diagram, making it difficult to choose what to include in our XQueries.
-    \item When designing XQueries, we had to reconfigure parts of our Class Diagram so that certain classes were properly connected after integrating them within XQueries.
+    \item Roisin
 \end{itemize}
+
+\begin{verbatim}
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  This XML document stores donation information for various events. Each 
+donation record includes details about the donor, the amount donated, payment 
+date, type of donation, and the purpose of the donation.
+→
+
+<!DOCTYPE Donations [
+    <!-- The 'Donations' element contains one or more 'Donation' elements -->
+    <!ELEMENT Donations (Donation+)>
+
+    <!-- The 'Donation' element must contain six child elements: donationID, 
+    donorID, amount, paymentDate, donationType, donationPurpose -->
+    <!ELEMENT Donation (donationID, donorID, amount, paymentDate, donationType, 
+    donationPurpose)>
+
+    <!-- 'donationID' is a simple text-based element that uniquely identifies the 
+    donation -->
+    <!ELEMENT donationID (#PCDATA)>
+
+    <!-- 'donorID' is a simple text-based element that identifies the donor -->
+    <!ELEMENT donorID (#PCDATA)>
+
+    <!-- 'amount' is a text-based element that contains the donation amount, with 
+    a required attribute 'currency' specifying the currency -->
+    <!ELEMENT amount (#PCDATA)>
+    <!ATTLIST amount currency CDATA #REQUIRED>
+
+    <!-- 'paymentDate' is a text-based element that specifies the date of the 
+    donation -->
+    <!ELEMENT paymentDate (#PCDATA)>
+
+    <!-- 'donationType' specifies the type of the donor (e.g., Individual, 
+    Corporate, Organization) -->
+    <!ELEMENT donationType (#PCDATA)>
+
+    <!-- 'donationPurpose' specifies the purpose of the donation (e.g., Exhibition 
+    Support, General Fund) -->
+    <!ELEMENT donationPurpose (#PCDATA)>
+]
+
+<Donations>
+    <!-- Each Donation represents a single donation made to the gallery -->
+    <Donation>
+        <donationID>D001</donationID>
+        <!-- Unique identifier for the donation -->
+        <donorID>USER001</donorID>
+        <!-- Unique identifier for the donor -->
+        <amount currency="EUR">100.00</amount>
+        <!-- The amount donated, with the associated currency (EUR) -->
+        <paymentDate>2023-11-14</paymentDate>
+        <!-- The date on which the donation was made -->
+        <donationType>Individual</donationType>
+        <!-- Type of donor: Individual, Corporate, Organization -->
+        <donationPurpose>Exhibition Support</donationPurpose>
+        <!-- The purpose for which the donation was made -->
+    </Donation>
+    <!-- Additional Donation records follow the same structure -->
+</Donations>
+    
+\end{verbatim}
+
+\newpage
 \section{Credits}
 
 \subsection{Finn}
@@ -469,7 +740,6 @@ required for each 'Membership' element to uniquely identify it-->
 \end{itemize}
 
 \subsection{Nick}
-% Add Nick's contributions here if any
 
 \subsection{Roisin}
 \begin{itemize}
@@ -492,12 +762,5 @@ required for each 'Membership' element to uniquely identify it-->
     \end{description}
     \item Identified strengths and weaknesses of the XML and XQuery design.
 \end{itemize}
-
-\newpage
-\begin{abstract}
-    \item Note from the author: This was my first time writing in Latex - it 
-    took me 3 hours to write this document. Please ignore this in the marking, just
-    felt like sharing.
-\end{abstract}
 
 \end{document}            % Ends the document content
