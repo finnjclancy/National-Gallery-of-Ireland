@@ -120,38 +120,6 @@ issues promptly. There was in-person collaboration on XML documents, which facil
 direct communication and quick problem-solving. Virtual collaboration occurred through 
 a GitHub repository, allowing us to share updates efficiently and work asynchronously.
 
-\section{UML Design to XML Implementation}
-Some classes needed adjusting to meet the assignment requirements of having six 
-elements in each document. We decided to add additional elements for depth and better 
-understanding of the overall design. The events document was missing two elements, so 
-we added "manager" and "short description." Similarly, the artwork document was 
-missing two elements, so we added "category" and "description." These additions 
-allowed us to create detailed XML documents without losing the general idea of our UML 
-design.
-
-When brainstorming ideas for interesting XQueries, we thought it would be beneficial 
-to have a query that determines how many pieces of art the gallery currently has in 
-a specific category, such as "Post-Impressionism." This query will make it easier for 
-curators to gauge if there are enough pieces of art available for their desired 
-exhibition. This update required us to adjust our artwork class to include a category 
-variable to match the category elements in the XML DTD.
-
-Another idea for an interesting XQuery was to explore different ways of structuring 
-important events. An event ID and a manager were mentioned. The ID existed in the use 
-case diagram, but the manager did not. By adding this, we were able to create the XML 
-documents and their XQueries according to the assignment guidelines while also making 
-our use cases more comprehensive. For instance, in this example, the relationship 
-between external partners, events, and the administration of the Art Gallery was 
-strengthened by adding a gallery manager overseeing the events.
-
-We added the following variables to the "Artist" class to ensure it matched the 
-elements in the Artist XML DTD: deathYear, specialty, and placeOfStudy.
-
-We also added a use case for the Curator called “Get Artwork For Each Artist,” which 
-will make the Curator's workflow more efficient. This allows them to gather 
-information for potential exhibitions quickly or respond to inquiries from auctioneers, 
-museums, and other galleries.
-
 \section{Strengths and Weaknesses Analysis}
 
 \subsection{XML}
